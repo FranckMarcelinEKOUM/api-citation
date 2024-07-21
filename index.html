@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html
+  lang="fr"
+  data-darkreader-mode="dynamic"
+  data-darkreader-scheme="dark"
+  data-lt-installed="true"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>api-citation</title>
+    <style class="darkreader darkreader--fallback" media="screen"></style>
+    <style class="darkreader darkreader--text" media="screen"></style>
+    <style class="darkreader darkreader--invert" media="screen">
+      .jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, ::-webkit-calendar-picker-indicator, img.Wirisformula
+      {
+        filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(85%) !important;
+      }
+    </style>
+    <style class="darkreader darkreader--inline" media="screen">
+      [data-darkreader-inline-bgcolor] {
+        background-color: var(--darkreader-inline-bgcolor) !important;
+      }
+      [data-darkreader-inline-bgimage] {
+        background-image: var(--darkreader-inline-bgimage) !important;
+      }
+      [data-darkreader-inline-border] {
+        border-color: var(--darkreader-inline-border) !important;
+      }
+      [data-darkreader-inline-border-bottom] {
+        border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+      }
+      [data-darkreader-inline-border-left] {
+        border-left-color: var(--darkreader-inline-border-left) !important;
+      }
+      [data-darkreader-inline-border-right] {
+        border-right-color: var(--darkreader-inline-border-right) !important;
+      }
+      [data-darkreader-inline-border-top] {
+        border-top-color: var(--darkreader-inline-border-top) !important;
+      }
+      [data-darkreader-inline-boxshadow] {
+        box-shadow: var(--darkreader-inline-boxshadow) !important;
+      }
+      [data-darkreader-inline-color] {
+        color: var(--darkreader-inline-color) !important;
+      }
+      [data-darkreader-inline-fill] {
+        fill: var(--darkreader-inline-fill) !important;
+      }
+      [data-darkreader-inline-stroke] {
+        stroke: var(--darkreader-inline-stroke) !important;
+      }
+      [data-darkreader-inline-outline] {
+        outline-color: var(--darkreader-inline-outline) !important;
+      }
+      [data-darkreader-inline-stopcolor] {
+        stop-color: var(--darkreader-inline-stopcolor) !important;
+      }
+      [data-darkreader-inline-bg] {
+        background: var(--darkreader-inline-bg) !important;
+      }
+      [data-darkreader-inline-invert] {
+        filter: invert(100%) hue-rotate(180deg);
+      }
+    </style>
+    <style class="darkreader darkreader--variables" media="screen">
+      :root {
+        --darkreader-neutral-background: #18191a;
+        --darkreader-neutral-text: #c9c6c1;
+        --darkreader-selection-background: #064ca0;
+        --darkreader-selection-text: #d8d6d3;
+      }
+    </style>
+    <style class="darkreader darkreader--root-vars" media="screen"></style>
+    <style class="darkreader darkreader--user-agent" media="screen"></style>
+    <link rel="stylesheet" href="resource://content-accessible/plaintext.css" />
+    <meta name="darkreader" content="3f6e24d2fa514f2aa272f1861e08f0a6" />
+    <style class="darkreader darkreader--override" media="screen">
+      .vimvixen-hint {
+        background-color: #765100 !important;
+        border-color: #c9a517 !important;
+        color: #e2d8bb !important;
+      }
+      #vimvixen-console-frame {
+        color-scheme: light !important;
+      }
+      ::placeholder {
+        opacity: 0.5 !important;
+      }
+      #edge-translate-panel-body,
+      .MuiTypography-body1,
+      .nfe-quote-text {
+        color: var(--darkreader-neutral-text) !important;
+      }
+      gr-main-header {
+        background-color: #143b47 !important;
+      }
+      .tou-z65h9k,
+      .tou-mignzq,
+      .tou-1b6i2ox,
+      .tou-lnqlqk {
+        background-color: var(--darkreader-neutral-background) !important;
+      }
+      .tou-75mvi {
+        background-color: #09232b !important;
+      }
+      .tou-ta9e87,
+      .tou-1w3fhi0,
+      .tou-1b8t2us,
+      .tou-py7lfi,
+      .tou-1lpmd9d,
+      .tou-1frrtv8,
+      .tou-17ezmgn {
+        background-color: #0f0f0f !important;
+      }
+      .tou-uknfeu {
+        background-color: #261a09 !important;
+      }
+      .tou-6i3zyv {
+        background-color: #1d5568 !important;
+      }
+      div.mermaid-viewer-control-panel .btn {
+        background-color: var(--darkreader-neutral-background);
+        fill: var(--darkreader-neutral-text);
+      }
+      svg g rect.er {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      svg g rect.er.entityBox {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      svg g rect.er.attributeBoxOdd {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      svg g rect.er.attributeBoxEven {
+        fill: var(--darkreader-selection-background);
+        fill-opacity: 0.8 !important;
+      }
+      svg rect.er.relationshipLabelBox {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      svg g g.nodes rect,
+      svg g g.nodes polygon {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      svg g rect.task {
+        fill: var(--darkreader-selection-background) !important;
+      }
+      svg line.messageLine0,
+      svg line.messageLine1 {
+        stroke: var(--darkreader-neutral-text) !important;
+      }
+      div.mermaid .actor {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      mitid-authenticators-code-app > .code-app-container {
+        background-color: white !important;
+        padding-top: 1rem;
+      }
+      iframe#unpaywall[src$="unpaywall.html"] {
+        color-scheme: light !important;
+      }
+      embed[type="application/pdf"] {
+        filter: invert(100%) contrast(90%);
+      }
+    </style>
+  </head>
+  <body>
+    <pre>
+            [
+                {
+                    "text":"Etant une minorité à la fois comme caste et comme classe, nous vivions sur l'ourlet de la vie, en luttant contre notre faiblesse et en nous battant pour nous accrocher ou pour grimper sans aide dans les grands plis du vêtement.",
+                    "auteur":"Toni Morrison ",
+                    "source":"L'oeil le plus bleu (1994)"
+                },
+                {
+                    "text":"Est-il possible que l'amour m'ait si absolument ôté la raison et la hardiesse, et qu'il m'ait rendu si différent de ce que j'ai été dans les autres passions de ma vie ?",
+                    "auteur":" Madame de La Fayette",
+                    "source":" La Princesse de Clèves (1678)"
+                },
+                {
+                    "text":"Je vous souhaite des rêves à n'en plus finir et l'envie furieuse d'en réaliser quelques uns.
+                        Je vous souhaite d'aimer ce qu'il faut aimer et d'oublier ce qu'il faut oublier.
+                            Je vous souhaite des passions, je vous souhaite des silences.
+                        Je vous souhaite des chants d'oiseaux au réveil et des rires d'enfants.
+                            Je vous souhaite de respecter les différences des autres, parce que le mérite et la valeur de chacun sont souvent à découvrir.
+                        Je vous souhaite de résister à l'enlisement, à l'indifférence et aux vertus négatives de notre époque.
+                        Je vous souhaite enfin, de ne jamais renoncer à la recherche, à l'aventure, à la vie, à l'amour, car la vie est une magnifique aventure et nul de raisonnable ne doit y renoncer sans livrer une rude bataille.
+                        Je vous souhaite surtout d'être vous, fier de l'être et heureux, car le bonheur est notre destin véritable.",
+                    "auteur":"Jacques Brel",
+                    "source":"Je vous souhaite « voeux de Jacques Brel sur Europe 1, 1er Janvier 1968 »"
+                },
+                {
+                    "text":"Telle est la vie des hommes. Quelques joies, très vite effacées par d'inoubliables chagrins. Il n'est pas nécessaire de le dire aux enfants.",
+                    "auteur":"Marcel Pagnol",
+                    "source":" Le Château de ma mère (1957)"
+                },
+                {
+                    "text":"Celui qui passe à côté de la plus belle histoire de sa vie n'aura que l'âge de ses regrets et tous les soupirs du monde ne sauraient bercer son âme.",
+                    "auteur":" Mohammed Moulessehoul, dit Yasmina Khadra",
+                    "source":" Ce que le jour doit à la nuit (2008)"
+                },
+                {
+                    "text":"Lassé enfin d'un état si malheureux et si incertain, il résolut de tenter quelque voie d'éclaircir sa destinée. Que veux-je attendre, disait-il ? il y a longtemps que je sais que j'en suis aimé ; elle est libre, elle n'a plus de devoir à m'opposer ; pourquoi me réduire à la voir sans en être vu et sans lui parler ? Est-il possible que l'amour m'ait si absolument ôté la raison et la hardiesse, et qu'il m'ait rendu si différent de ce que j'ai été dans les autres passions de ma vie ? J'ai dû respecter la douleur de madame de Clèves ; mais je la respecte trop long-temps, et je lui donne le loisir d'éteindre l'inclination qu'elle a pour moi.",
+                    "auteur":" Madame de La Fayette",
+                    "source":" La Princesse de Clèves (1678)"
+                },
+                {
+                    "text":"Plus tard, quand je serai grand, je veux être mécanicien pour ne jamais être en panne dans la vie. Il faut savoir réparer les choses quand elles ne fonctionnent plus.",
+                    "auteur":"Gaël Faye",
+                    "source":" Petit Pays (2016)"
+                },
+                {
+                    "text":"Ne regrette rien, il faudra toujours continuer à apprendre et à te perfectionner, et ce n'est pas à l'école que tu pourras le faire. L'école donne des diplômes, mais c'est dans la vie qu'on se forme.",
+                    "auteur":"Amadou Hampâté Bâ",
+                    "source":"Amkoullel l'enfant peul (1991)"
+                },
+                {
+                    "text":"La vie est une chance, saisis-la. La vie est beauté, admire-la. La vie est béatitude, savoure-la. La vie est un rêve, fais en une réalité. La vie est un défi, fais lui face. La vie est un devoir, accomplis-le. La vie est un jeu, joue-le. La vie est précieuse, prends en soin. La vie est une richesse, conserve-la. La vie est amour, jouis-en. La vie est mystère, perce-le. La vie est promesse, remplis-la. La vie est tristesse, surmonte-la. La vie est un hymne, chante-le. La vie est un combat, accepte-le. La vie est une tragédie, prends la à bras le corps. La vie est une aventure, ose-la. La vie est bonheur, mérite-le. La vie est la vie, défends la.",
+                    "auteur":"Mère Teresa",
+                    "source":"Prière de Mère Teresa"
+                },
+                {
+                    "text":"Quand on ne sait pas ce qu'est la vie, comment pourrait-on savoir ce qu'est la mort ?",
+                    "auteur":"Confucius",
+                    "source":"Les quatre livres de philosophie morale et politique de la chine"
+                },
+                {
+                    "text":"La vie, c'est comme une bicyclette, il faut avancer pour ne pas perdre l'équilibre.",
+                    "auteur":" Albert Einstein",
+                    "source":"Lettre d'Albert Einstein à son fils Eduard , le 5 février 1930"
+                },
+                {
+                    "text":"Mais quoi ! vous aimez la vie qui passe, Et vous négligez l'au-delà !",
+                    "auteur":"Coran",
+                    "source":"Sourate LXXV, 20-21"
+                },
+                {
+                    "text":"Il n'y a qu'un seul bien à la base d'une vie heureuse : la confiance en soi-même.",
+                    "auteur":"Sénèque",
+                    "source":"Lettres à Lucilius"
+                },
+                {
+                    "text":"La vie vous fait des cadeaux en bien et en mal.",
+                    "auteur":"Proverbes africains",
+                    "source":"Proverbe"
+                },
+                {
+                    "text":"La vie est un mystère qu'il faut vivre, et non un problème à résoudre.",
+                    "auteur":"Mahatma Gandhi",
+                    "source":" Tous les hommes sont frères, vie et pensées de Gandhi d'après ses oeuvres (1990)"
+                },
+                {
+                    "text":"La vie c'est comme une boîte de chocolats, on ne sait jamais sur quoi on va tomber.",
+                    "auteur":"Robert Zemeckis",
+                    "source":"Forrest Gump, dans le film Forrest Gump."
+                },
+                {
+                    "text":"On ne peut pas passer la vie à espérer toujours, à attendre. Il faut vivre la vie.",
+                    "auteur":"Michael Morpurgo",
+                    "source":"Le Royaume de Kensuké (2000)"
+                },
+                {
+                    "text":"Une vie sans examen ne vaut pas la peine d'être vécue.",
+                    "auteur":"Socrate",
+                    "source":"Entretiens"
+                },
+                {
+                    "text":"Les idéaux qui ont guidé ma route et m'ont donné le courage d'affronter la vie jours après jours avec gaieté, ont été la gentillesse, la beauté et la vérité.",
+                    "auteur":"Albert Einstein",
+                    "source":"Comment je vois le monde (1934)"
+                },
+                {
+                    "text":"Le bonheur ne s'acquiert pas, il ne réside pas dans les apparences, chacun d'entre nous le construit à chaque instant de sa vie avec son coeur.",
+                    "auteur":"Proverbes africains",
+                    "source":"Proverbe"
+                },
+                {
+                    "text":"La vie est courte, la vie des héros est encore plus courte.",
+                    "auteur":"Norbert Zongo",
+                    "source":"Le sens d'un combat (2000)"
+                },
+                {
+                    "text":"Je ne crois pas au fait que tout le monde garde ces yeux, ou ne tombe jamais malade, ou je ne sais pas quoi. Mais je crois que tout le monde a droit au grand amour et que le grand amour doit durer toute la vie.",
+                    "auteur":"John Michael Green",
+                    "source":"Nos étoiles contraires (2013)"
+                },
+                {
+                    "text":"Mais à quoi pensent-ils dans ton école ? Est-ce qu'ils se figurent que je vais vivre ma vie entière loin de mon fils ? Mourir loin de mon fils ? Ils n'ont donc pas de mère ces gens-là ?",
+                    "auteur":"Camara Laye",
+                    "source":"L'Enfant noir (1953)"
+                },
+                {
+                    "text":"Quand l'homme naît il est souple et faible ; à sa mort il est rigide et dur.
+                    Les plantes à leur naissance sont souples et fragiles. A leur mort, elles sont sèches et dures.
+                    Ce qui est dur et fort va vers sa mort. Ce qui est souple et faible va vers la vie.",
+                    "auteur":"Lao-Tseu",
+                    "source":"Tao tö King (1967)"
+                },
+                {
+                    "text":"La parole se suspend, mais la vie, elle, ne se suspend pas.",
+                    "auteur":"Cheikh Hamidou Kane",
+                    "source":"L'Aventure ambiguë (1961)"
+                },
+                {
+                    "text":"Une vie ne vaut rien, mais rien ne vaut la vie.",
+                    "auteur":"André Malraux",
+                    "source":"Les Conquérants (1928)"
+                },
+                {
+                    "text":"Comme la vie serait pleine de choses charmantes si nous pouvions compter sur la discrétion absolue les uns des autres. Ce qui arrête souvent bien souvent, presque toujours les femmes, C'est là peur du secret dévoilé. Puis il ajouta, souriant : -Voyons, n'est-ce pas vrai ?",
+                    "auteur":"Guy de Maupassant",
+                    "source":"Bel-Ami (1885)"
+                },
+                {
+                    "text":"La vie, ce n'est pas attendre que l'orage passe, c'est apprendre à danser sous la pluie.",
+                    "auteur":"Sénèque",
+                    "source":"Apocryphe"
+                },
+                {
+                    "text":"Il n'y a pas de situation fixe dans cette vie, à moins qu'on ne s'occupe de l'autre.",
+                    "auteur":"Proverbes chinois",
+                    "source":"Proverbe"
+                },
+                {
+                    "text":"Plus nous aurons donné de sens à notre vie, moins nous éprouverons de regrets à l'instant de la mort.",
+                    "auteur":"Dalaï-Lama",
+                    "source":"Du bonheur de vivre et de mourir en paix (1998)"
+                },
+                {
+                    "text":"Tous les maux de notre vie sont dus à l'Homme, notre tyran. Débarrassons-nous de l'Homme, et nôtre sera le produit de notre travail. C'est presque du jour au lendemain que nous pourrions devenir libres et riches.",
+                    "auteur":"George Orwell",
+                    "source":"La Ferme des animaux (1945)"
+                },
+                {
+                    "text":"Il n’y a pas de hasard dans les rencontres...
+                        Elles ont lieu quand nous atteignons une limite,
+                        Que sous avons besoin de mourir pour renaître,
+                        Les rencontres nous attendent
+                        Mais parfois nous les empêchons d’avoir lieu...
+                        Si nous sommes désespérés
+                        Et si nous n’avons plus rien à perdre,
+                        Ou au contraire enthousiasmés par la vie,
+                        L’inconnu se manifeste et notre univers change.
+                        Les rencontres les plus importantes
+                        Ont été préparées par les âmes
+                        Bien avant que le corps ne se voient...",
+                    "auteur":"Paulo Coelho",
+                    "source":"Onze Minutes (2003)"
+                },
+                {
+                    "text":"Voilà pourtant la seule bonne chose de la vie : l'amour ! Tenir dans ses bras une femme aimée ! Là est la limite du bonheur humain.",
+                    "auteur":"Guy de Maupassant",
+                    "source":"Bel-Ami (1885)"
+                },
+                {
+                    "text":"Mon père disait toujours: dans la vie y'a pas de grand, y'a pas de petit; la bonne longueur pour les jambes, c'est quand les pieds touchent bien par terre.",
+                    "auteur":"Coluche",
+                    "source":"L'étudiant (1980)"
+                },
+                {
+                    "text":"Le génocide est une marée noire, ceux qui ne s'y sont pas noyés sont mazoutés à vie.",
+                    "auteur":"Gaël Faye",
+                    "source":" Petit Pays (2016)"
+                },
+                {
+                    "text":"Les montagnes russes, c'est ma vie. La vie est un jeu violent et hallucinant ; la vie, c'est se jeter en parachute et prendre des risques, tomber et se relever, c'est de l'alpinisme, c'est vouloir monter au sommet de soi-même et être insatisfait et angoissé quand on n'y parvient pas.",
+                    "auteur":"Paulo Coelho",
+                    "source":"Onze Minutes (2003)"
+                },
+                {
+                    "text":"La vie est comme le feu : flamme, fumée et cendre.",
+                    "auteur":"Proverbes africains",
+                    "source":"Proverbe"
+                },
+                {
+                    "text":"Ah! frappe-toi le coeur, c'est là qu'est le génie.
+                        C'est là qu'est la pitié, la souffrance et l'amour;
+                        C'est là qu'est le rocher du désert de la vie,
+                        D'où les flots d'harmonie,
+                        Quand Moïse viendra, jailliront quelque jour.",
+                    "auteur":" Alfred de Musset",
+                    "source":"Premières Poésies (1828-1835), A mon ami Edouard Boucher"
+                },
+                {
+                    "text":"Ton chagrin n'est qu'une joie et ton malheur est un bonheur à côté du mal qui me ronge et me détruit. Quand on est habitué à vivre dans le plaisir et la joie, un petit malheur semble plus insupportable qu'à quelqu'un d'un peu endurci par la vie.",
+                    "auteur":"Chrétien de Troyes",
+                    "source":"Yvain ou le Chevalier au Lion (v. 1177)"
+                },
+                {
+                    "text":"Eau, tu n'as ni goût, ni couleur, ni arôme, on ne peut pas te définir, on te goûte, sans te connaître. Tu n'es pas nécessaire à la vie tu es la vie.",
+                    "auteur":"Antoine de Saint-Exupéry",
+                    "source":"Terre des hommes (1938)"
+                },
+                {
+                    "text":"Demande ma vie, qui est l'unique chose qui me reste à te sacrifier ; car mon coeur n'a jamais cessé d'être à toi.",
+                    "auteur":"Abbé Prévost",
+                    "source":"Manon Lescaut"
+                },
+                {
+                    "text":"Il est sûr que, du naturel tendre et constant dont je suis, j'étais heureux pour toute ma vie, si Manon m'eût été fidèle.",
+                    "auteur":"Abbé Prévost",
+                    "source":"Manon Lescaut"
+                },
+                {
+                    "text":"La vie n'est qu'une longue perte de tout ce qu'on aime. On laisse derrière soi une traînée de douleurs. Le destin nous ahurit par une prolixité de souffrances insupportables. Après cela, on s'étonne que les vieilles gens rabâchent.",
+                    "auteur":"Victor Hugo",
+                    "source":"L'Homme qui rit (1869)"
+                },
+                {
+                    "text":"N'importe ! elle n'était pas heureuse, ne l'avait jamais été. D'où venait donc cette insuffisance de la vie, cette pourriture instantanée des choses où elle s'appuyait ?",
+                    "auteur":"Gustave Flaubert",
+                    "source":"Madame Bovary (1857)"
+                },
+                {
+                    "text":"Si tu te confrontes à tes erreurs seulement une ou deux fois dans ta vie, ça risque de te faire terriblement mal. Moi, je fais un examen de conscience chaque jour - comme ça, c'est pas plus douloureux qu'un rasage à sec.",
+                    "auteur":"Larry McMurtry",
+                    "source":"Lonesome Dove (1990)"
+                },
+                {
+                    "text":"L'homme qui voit à 50 ans le monde comme il le voyait à 20 a gaspillé 30 ans de sa vie.",
+                    "auteur":"Mohammed Ali ou Cassius Clay",
+                    "source":"Playboy, novembre 1975"
+                },
+                {
+                    "text":"La vie est un départ, la mort est un retour.",
+                    "auteur":"Lao-Tseu",
+                    "source":"Tao tö King (1967)"
+                },
+                {
+                    "text":"Les valeurs sont le sens que l'on choisit de donner à sa vie.",
+                    "auteur":" Jean-Paul Sartre",
+                    "source":"L'existentialisme est un humanisme (1945)"
+                },
+            ]
+        </pre
+    >
+  </body>
+</html>
